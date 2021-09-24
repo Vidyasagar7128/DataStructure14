@@ -16,6 +16,7 @@ namespace MyDataStructure
             linkedListNode.RemoveLast();
             Console.WriteLine();
             linkedListNode.Show();
+            Console.WriteLine(linkedListNode.Search(30));
         }
     }
 }

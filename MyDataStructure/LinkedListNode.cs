@@ -106,6 +106,19 @@ namespace MyDataStructure
         {
             return this.Remove(count - 1);
         }
+        public bool Search(int val)
+        {
+            Node<Gtype> current = this.head;
+            for (int i=0; i < count; i++)
+            {
+                if (current.Data.Equals(val))
+                {
+                    return true;
+                }
+                current = current.Next;
+            }
+            return false;
+        }
         public void Show()
         {
             Node<Gtype> current = this.head;
