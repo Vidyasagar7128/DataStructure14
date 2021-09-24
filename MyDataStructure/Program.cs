@@ -13,10 +13,12 @@ namespace MyDataStructure
             linkedListNode.Add(70);
             linkedListNode.AddPosition(1,30);
             linkedListNode.Show();
-            linkedListNode.RemoveLast();
             Console.WriteLine();
             linkedListNode.Show();
             Console.WriteLine(linkedListNode.Search(30));
+            linkedListNode.InsertAfter(30,40);
+            Console.WriteLine();
+            linkedListNode.Show();
         }
     }
 }

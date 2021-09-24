@@ -119,6 +119,26 @@ namespace MyDataStructure
             }
             return false;
         }
+        /// <summary>
+        /// Insert after 30
+        /// </summary>
+        /// <param name="preposition"></param>
+        /// <param name="data"></param>
+        /// <returns>data</returns>
+        public int InsertAfter(int preposition,int data)
+        {
+            Node<Gtype> current = this.head;
+            for (int i = 0; i < count; i++)
+            {
+                if (current.Data.Equals(preposition))
+                {
+                    Console.WriteLine($"Position: {i}");
+                    return this.AddPosition(i+1, data);
+                }
+                current = current.Next;
+            }
+            return data;
+        }
         public void Show()
         {
             Node<Gtype> current = this.head;
