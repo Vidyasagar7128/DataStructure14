@@ -10,8 +10,8 @@ namespace MyDataStructure
             Console.WriteLine("Linked List!");
             LinkedListNode<int> linkedListNode = new LinkedListNode<int>();
             linkedListNode.Add(56);
-            linkedListNode.Add(30);
             linkedListNode.Add(70);
+            linkedListNode.AddPosition(1,30);
             linkedListNode.Show();
         }
     }
