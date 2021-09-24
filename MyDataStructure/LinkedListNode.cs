@@ -102,6 +102,10 @@ namespace MyDataStructure
         {
             return this.Remove(0);
         }
+        public int RemoveLast()
+        {
+            return this.Remove(count - 1);
+        }
         public void Show()
         {
             Node<Gtype> current = this.head;

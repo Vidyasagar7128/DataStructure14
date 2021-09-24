@@ -13,7 +13,7 @@ namespace MyDataStructure
             linkedListNode.Add(70);
             linkedListNode.AddPosition(1,30);
             linkedListNode.Show();
-            linkedListNode.RemoveFirst();
+            linkedListNode.RemoveLast();
             Console.WriteLine();
             linkedListNode.Show();
         }
