@@ -67,6 +67,41 @@ namespace MyDataStructure
 
             return current.Data;
         }
+        public int Remove(int index)
+        {
+            if (index < 0)
+            {
+                throw new ArgumentOutOfRangeException($"Index:{index}");
+            }
+            if (this.Empty)
+                return 0;
+
+            if (index >= this.count)
+            {
+                Console.WriteLine($"Can not Delete by {index} Index");
+            }
+            Node<Gtype> current = this.head;
+            int result = 0;
+            if (index == 0)
+            {
+                result = current.Data;
+                this.head = current.Next;
+            }
+            else
+            {
+                for (int i = 0; i < index - 1; i++)
+                    current = current.Next;
+                result = current.Next.Data;
+
+                current.Next = current.Next.Next;
+            }
+            count--;
+            return result;
+        }
+        public int RemoveFirst()
+        {
+            return this.Remove(0);
+        }
         public void Show()
         {
             Node<Gtype> current = this.head;

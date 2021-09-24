@@ -13,6 +13,9 @@ namespace MyDataStructure
             linkedListNode.Add(70);
             linkedListNode.AddPosition(1,30);
             linkedListNode.Show();
+            linkedListNode.RemoveFirst();
+            Console.WriteLine();
+            linkedListNode.Show();
         }
     }
 }
