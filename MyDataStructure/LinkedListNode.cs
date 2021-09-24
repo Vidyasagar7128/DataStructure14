@@ -139,6 +139,19 @@ namespace MyDataStructure
             }
             return data;
         }
+        public int DeleteElement(int val)
+        {
+            Node<Gtype> current = this.head;
+            for (int i = 0; i < count; i++)
+            {
+                if (current.Data.Equals(val))
+                {
+                    return this.Remove(i);
+                }
+                current = current.Next;
+            }
+            return val;
+        }
         public void Show()
         {
             Node<Gtype> current = this.head;

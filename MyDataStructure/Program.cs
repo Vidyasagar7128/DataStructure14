@@ -19,6 +19,9 @@ namespace MyDataStructure
             linkedListNode.InsertAfter(30,40);
             Console.WriteLine();
             linkedListNode.Show();
+            linkedListNode.DeleteElement(40);
+            Console.WriteLine();
+            linkedListNode.Show();
         }
     }
 }
